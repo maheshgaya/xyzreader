@@ -148,9 +148,7 @@ public class ArticleListActivity extends AppCompatActivity implements
                             ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition())));
 
                     Bundle bundle = ActivityOptions
-                            .makeSceneTransitionAnimation(mContext,
-                                    v.findViewById(R.id.photo),
-                                    v.findViewById(R.id.photo).getTransitionName())
+                            .makeSceneTransitionAnimation(mContext)
                             .toBundle();
                     startActivity(itemIntent, bundle);
                 }
