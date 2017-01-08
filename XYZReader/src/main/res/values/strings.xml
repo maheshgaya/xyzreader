@@ -9,4 +9,7 @@
 
     <string name="up">Up</string>
 
+    <!-- Shared transitions -->
+    <string name="transition_list_photo">listPhoto</string>
+
 </resources>
