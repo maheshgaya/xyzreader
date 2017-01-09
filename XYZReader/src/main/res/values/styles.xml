@@ -24,6 +24,9 @@
         <item name="android:windowContentTransitions">true</item>
     </style>
 
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="Theme.Bacon.List" parent="Theme.Bacon">
         <item name="android:windowEnterTransition">@transition/list_exit</item>
@@ -40,6 +43,11 @@
 
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    
+    <style name="ExpandedTextToolbar">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
     </style>
 
 </resources>
