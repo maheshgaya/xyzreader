@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -20,6 +21,8 @@
             android:scrollbarStyle="outsideOverlay"
             android:paddingLeft="@dimen/list_side_margin"
             android:paddingRight="@dimen/list_side_margin"
+            android:paddingEnd="@dimen/list_side_margin"
+            android:paddingStart="@dimen/list_side_margin"
             android:paddingBottom="28dp" />
     </android.support.v4.widget.SwipeRefreshLayout>
 
@@ -34,6 +37,8 @@
                 app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 android:layout_marginLeft="@dimen/list_toolbar_side_margin"
                 android:layout_marginRight="@dimen/list_toolbar_side_margin"
+                android:layout_marginStart="@dimen/list_toolbar_side_margin"
+                android:layout_marginEnd="@dimen/list_toolbar_side_margin"
                 app:layout_scrollFlags="scroll|enterAlways"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/list_toolbar"

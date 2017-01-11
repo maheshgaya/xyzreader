@@ -14,4 +14,10 @@
     <!-- Shared transitions -->
     <string name="transition_list_photo">listPhoto</string>
 
+    <!-- Content Description -->
+    <string name="content_photo">Thumbnail photo</string>
+    <string name="content_share">Share article</string>
+    <string name="content_title">Title</string>
+    <string name="content_subtitle">Subtitle</string>
+
 </resources>
