@@ -24,7 +24,7 @@
             android:id="@+id/photo"
             android:contentDescription="@string/content_photo"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:transitionName="@string/transition_list_photo"
             tools:src="@color/photo_placeholder" />
 
