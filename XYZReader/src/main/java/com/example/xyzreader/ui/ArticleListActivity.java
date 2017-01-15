@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.Loader;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -145,11 +146,16 @@ public class ArticleListActivity extends AppCompatActivity implements
                 public void onClick(View v) {
                     Intent itemIntent = new Intent(Intent.ACTION_VIEW,
                             ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition())));
+                    if (Build.VERSION.SDK_INT >= 21) {
+                        Bundle bundle = ActivityOptions
+                                .makeSceneTransitionAnimation(mContext)
+                                .toBundle();
+                        startActivity(itemIntent, bundle);
+                    } else {
+                        startActivity(itemIntent);
+                    }
 
-                    Bundle bundle = ActivityOptions
-                            .makeSceneTransitionAnimation(mContext)
-                            .toBundle();
-                    startActivity(itemIntent, bundle);
+
                 }
             });
             return vh;
