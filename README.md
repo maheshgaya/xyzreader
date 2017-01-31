@@ -3,6 +3,8 @@ Project 5 - Udacity Android Developer Nanodegree
 
 The goal of this project is to understand `Material Design`. 
 
+<img src="https://raw.githubusercontent.com/maheshgaya/maheshgaya.com/master/images/xyzreader_0.png" width="280" style="max-width:100%;">
+
 ## Using the source code
 1. Clone this repository
 
